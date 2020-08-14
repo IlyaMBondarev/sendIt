@@ -1,0 +1,1127 @@
+*
+  padding: 0
+  margin: 0
+a
+  text-decoration: none
+li
+  list-style-type: none
+*:focus
+  outline: none
+.arrow_left, .arrow_right
+  display: block
+  width: 12px
+  height: 12px
+  border-left: 2px solid #C4C4C4
+  border-bottom: 2px solid #C4C4C4
+  position: absolute
+  &:hover
+    border-bottom-color: #008DCD
+    border-left-color: #008DCD
+.arrow_left
+  transform: rotate(45deg)
+  left: 21px
+.arrow_right
+  transform: rotate(-135deg)
+  right: 21px
+
+.arrow_down
+  width: 8px
+  height: 8px
+  border-left: 2px solid #008DCD
+  border-bottom: 2px solid #008DCD
+  transform: rotate(-45deg)
+
+.mobile_logo
+  display: none
+body
+  font-family: 'Myriad Pro', sans-serif
+#menu_switcher
+  position: absolute
+  left: -100%
+  visibility: hidden
+
+#menu_switcher:checked ~ .nav
+  left: 0
+
+#menu_switcher_2
+  position: absolute
+  left: -100%
+  visibility: hidden
+
+#menu_switcher_2:checked ~ .nav
+  left: 0
+.menu_open
+  font-size: 30px
+  color: #FFFFFF
+
+.footer .menu_open
+  color: #000000
+
+.menu_close
+  font-size: 30px
+  color: #363636
+
+.fa-bars_header
+  margin-top: 27px
+.header
+  position: relative
+  overflow: hidden
+  &__img
+    z-index: -1
+    position: absolute
+  &_logo
+    padding-top: 27px
+
+.button
+  font-size: 16px
+  font-weight: 600
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  text-transform: uppercase
+  color: #FFFFFF
+  padding: 17px 25px
+  border-radius: 30px
+  background: #008DCD
+  width: 228px
+  &:hover
+    box-shadow: 0 4px 15px rgba(27, 170, 235, 0.45)
+  &:active
+    box-shadow: none
+
+.aggregator
+  background: #F7F7F7
+.call
+  background: #F7F7F7
+.recall
+  color: #FFFFFF
+  background: #008DCD
+  &_h1
+    text-transform: uppercase
+  &_input
+    padding: 17px 24px
+    margin-bottom: 9px
+    border: 1px solid #FFFFFF
+    border-radius: 30px
+    background: #008DCD
+    color: inherit
+    width: 228px
+    &::-moz-placeholder
+      color: inherit
+    &::-webkit-input-placeholder
+      color: inherit
+  &__button
+    color: #363636
+    background: #FFCC00
+    width: 280px
+    border: none
+    cursor: pointer
+    &:hover
+      box-shadow: 0 0 10px #FFCC00
+    &:active
+      box-shadow: none
+  &_checkbox_label
+    font-size: 10px
+    line-height: 12px
+    display: flex
+    align-items: center
+    margin-top: 7px
+    &_checkbox
+      margin-right: 8px
+
+.advantages
+  background: #F7F7F7
+.faq
+  background: #D2ECF7
+  &_h1
+    margin-bottom: 20px
+  &_block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: #FFFFFF
+    border-radius: 32px
+    padding-left: 24px
+    padding-right: 24px
+    margin-bottom: 10px
+  &_info::-webkit-details-marker
+    display: none
+  &_question
+    width: calc(100% - 22px)
+  &_list[open] .arrow_down
+    transform: rotateZ(135deg)
+
+
+.footer
+  background: #E9E9E9
+  &_h1
+    text-transform: uppercase
+  &_input
+    padding: 14px 24px
+    margin-bottom: 9px
+    border: 1px solid #363636
+    background: inherit
+    border-radius: 30px
+    color: #363636
+    width: 228px
+    &::-moz-placeholder
+      color: #363636
+      font-size: 14px
+      line-height: 17px
+    &::-webkit-input-placeholder
+      color: #363636
+      font-size: 14px
+      line-height: 17px
+  &__button
+    width: 280px
+    border: none
+    &:hover
+      box-shadow: 0 0 10px #008DCD
+    &:active
+      box-shadow: none
+  &_checkbox_label
+    font-size: 10px
+    line-height: 12px
+    display: flex
+    align-items: center
+    margin-top: 7px
+  &_checkbox
+    margin-right: 8px
+    &~p
+      color: #9E9E9E
+  &_nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid #C4C4C4
+    border-top: 1px solid #C4C4C4
+    padding-top: 12px
+    padding-bottom: 17px
+  &_menu
+    &__summary::-webkit-details-marker
+      display: none
+    &__block
+      background: #363636
+      height: 5px
+      width: 40px
+      margin-bottom: 9px
+  &_copylinks
+    display: flex
+    justify-content: space-between
+    font-size: 9px
+    line-height: 10px
+    padding-top: 18px
+    padding-bottom: 18px
+  &_last
+      padding-left: 8px
+.sociallink
+  color: #008DCD
+  font-size: 12px
+@media (max-width: 767px)
+  .center
+    padding: 0 21px
+  .header
+    margin-bottom: 27px
+    &_nav
+      display: flex
+      justify-content: space-between
+      position: relative
+    &__img
+      height: 288px
+      width: 790px
+      right: -58px
+      top: -11px
+    &_h1
+      font-size: 32px
+      color: #000000
+      font-weight: 800
+      &:first-of-type
+        margin-top: 230px
+    &_h2
+      font-size: 24px
+      margin-top: 8px
+      margin-bottom: 17px
+
+  .nav
+    position: fixed
+    width: 100%
+    height: 100vh
+    left: -100%
+    top: 0
+    background: #FFFFFF
+    z-index: 1
+    transition: all 0.4s
+
+  .mobile_logo
+    display: block
+    margin-top: 13px
+
+  .menu_list
+    margin-top: 21px
+  .menu_link
+    color: #000000
+    font-size: 18px
+    line-height: 22px
+
+  .mobile_links
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 23px
+
+  .mobile_sociallink
+    color: #008DCD
+    font-size: 38px
+
+  .menu_close
+    position: absolute
+    top: 27px
+    right: 21px
+
+  .header_menu-label
+    justify-content: center
+  .aggregator
+    padding-top: 17px
+    padding-bottom: 17px
+    &_h2
+      font-size: 17px
+    &_p
+      font-size: 12px
+      margin-top: 10px
+      margin-bottom: 12px
+    &_img
+      width: 100%
+      margin-bottom: 25.5px
+
+  .step
+    margin-bottom: 27px
+    &_h2
+      font-size: 26px
+      font-weight: 600
+    &_p
+      font-size: 14px
+      margin-top: 8px
+    &_image
+      margin-top: 27px
+      margin-bottom: 27px
+
+  .call
+    padding-top: 23px
+    padding-bottom: 23px
+    &_h2
+      font-size: 24px
+      line-height: 29px
+      margin-bottom: 20px
+  .recall
+    color: #FFFFFF
+    background: #008DCD
+    padding-top: 32px
+    padding-bottom: 10px
+    &_h1
+      font-size: 28px
+      line-height: 34px
+      text-transform: uppercase
+    &_p
+      font-size: 14px
+      line-height: 13px
+      margin-top: 15px
+      margin-bottom: 15px
+    &_input
+      padding: 17px 24px
+      margin-bottom: 9px
+      border: 1px solid #FFFFFF
+      border-radius: 30px
+      background: #008DCD
+      color: inherit
+      width: 228px
+      &::-moz-placeholder
+        color: inherit
+      &::-webkit-input-placeholder
+        color: inherit
+    &__button
+      color: #363636
+      background: #FFCC00
+      width: 280px
+      border: none
+      &:hover
+        box-shadow: 0 0 10px #FFCC00
+      &:active
+        box-shadow: none
+    &_checkbox_label
+      font-size: 10px
+      line-height: 12px
+      display: flex
+      align-items: center
+      margin-top: 7px
+    &_checkbox
+      margin-right: 8px
+
+  .replies
+    margin-bottom: 24px
+  .reply
+    margin-left: 24px
+    margin-right: 24px
+    &_2
+      display: none
+    &_h1
+      font-size: 28px
+      line-height: 34px
+      margin-top: 11px
+      margin-bottom: 7px
+    &_photo
+      float: left
+      margin-right: 18px
+      margin-bottom: 14px
+    &_h2
+      font-size: 26px
+      line-height: 31px
+    &_h3
+      font-size: 18px
+      line-height: 22px
+    &_from, &_to, &_subject
+      font-size: 10px
+      line-height: 12px
+    &_subject
+      margin-top: 9px
+    &_from
+      margin-top: 5px
+    &_to
+      margin-top: 4px
+    &_content
+      clear: both
+      font-size: 12px
+      line-height: 14px
+    &__arrow
+      top: 157px
+
+  .replies_pagination
+    position: relative
+  .advantages
+    padding-top: 23px
+    padding-bottom: 6px
+    &_h1
+      font-size: 28px
+      line-height: 34px
+    &_blocks
+      display: flex
+      justify-content: space-around
+      margin-top: 20px
+      &:last-of-type
+        margin-top: 0
+    &_block
+      border-radius: 50%
+      background: #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 86px
+      height: 86px
+    &_content
+      margin-bottom: 24px
+      &:nth-child(3n)
+        margin-right: 0
+    &_p
+      font-size: 10px
+      line-height: 12px
+      text-align: center
+      max-width: 86px
+
+  .guaranties
+    margin-left: 24px
+    margin-right: 24px
+    &__button
+      width: 180px
+    &__arrow
+      top: 70px
+    &_h1
+      font-size: 28px
+      line-height: 34px
+      margin-top: 24px
+      margin-bottom: 13px
+
+  .guaranties_pagination
+    position: relative
+    margin-bottom: 20px
+
+  .guaranty
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    &_photo
+      border-radius: 50%
+      background: #F7F7F7
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 62px
+      height: 62px
+      margin-right: 10px
+    &_h3
+      font-size: 16px
+      line-height: 19px
+      font-weight: 600
+      width: 155px
+    &_content
+      font-size: 12px
+      line-height: 14px
+      margin-top: 14px
+      margin-bottom: 7px
+    &_tablet_2, &_tablet_3
+      display: none
+
+  .faq
+    padding-top: 25px
+    padding-bottom: 15px
+    &_h1
+      font-size: 28px
+      line-height: 34px
+    &_block
+      height: 80px
+    &_question
+      width: calc(100% - 22px)
+
+  .partners
+    position: relative
+    display: flex
+    justify-content: space-around
+    padding: 17px 45px
+    flex-wrap: wrap
+    &_hidden
+      display: none
+    &__arrow
+      top: 51px
+
+  .footer
+    &_h1
+      font-size: 18px
+      line-height: 22px
+      padding-top: 17px
+      margin-bottom: 13px
+    &_form
+      padding-bottom: 13px
+
+  .sociallink
+    display: none
+
+  .layer_1
+    width: 58px
+  .layer_2
+    width: 34px
+  .layer_3
+    width: 36px
+  .layer_4
+    width: 37px
+  .layer_5
+    width: 38px
+  .layer_6
+    width: 40px
+@media (min-width: 354px)
+  .partners_hidden
+    display: block
+
+@media (min-width: 618px)
+  .partners__arrow
+    top: 34px
+
+@media (min-width: 700px) and (max-width: 767px)
+  .header__img
+    right: -20px
+
+@media (min-width: 450px) and (max-width: 767px)
+  .header, .aggregator, .steps, .call
+    text-align: center
+  .button
+    margin: 0 auto
+  .recall__button, .footer__button
+    margin: 0
+  .header_menu-button
+    margin: 0 auto
+
+
+@media (min-width: 768px)
+  .center
+    padding: 0 34px
+  .header
+    min-height: 415px
+    &_nav
+      display: flex
+      justify-content: space-between
+      flex-grow: 1
+      position: relative
+    &__img
+      width: 1138px
+      height: 415px
+      left: -258px
+      top: -2px
+    &_h1
+      font-size: 44px
+      line-height: 53px
+      color: #FFFFFF
+      font-weight: 800
+      &:first-of-type
+        margin-top: 55px
+    &_h2
+      font-size: 28px
+      margin-top: 18px
+      margin-bottom: 36px
+      color: #FFFFFF
+    &_logo
+      width: 100px
+      margin-right: 20px
+
+  .nav
+    flex-grow: 1
+    display: flex
+    justify-content: space-between
+
+  .menu
+    display: flex
+    justify-content: space-between
+    flex-grow: 1
+    padding: 0
+
+  .menu_list
+    margin-top: 27px
+  .menu_link
+    color: #FFFFFF
+    font-size: 14px
+
+  .aggregator
+    display: flex
+    flex-wrap: wrap
+    padding-top: 25px
+    padding-bottom: 51px
+    &_h2
+      font-size: 36px
+      line-height: 43px
+      width: 100%
+    &_content
+      width: 40%
+      margin-right: 22px
+    &_p
+      font-size: 14px
+      line-height: 17px
+      margin-top: 20px
+      margin-bottom: 30px
+    &_img
+      margin-bottom: 25.5px
+      order: 1
+      width: 55%
+
+  .steps
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+
+  .step
+    margin-bottom: 27px
+    width: 281px
+    &_h2
+      font-size: 26px
+      line-height: 31px
+      font-weight: 600
+    &_p
+      font-size: 16px
+      margin-top: 15px
+    &_image
+      margin-top: 27px
+      margin-bottom: 27px
+
+  .call
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 30px
+    padding-bottom: 30px
+    &_h2
+      font-size: 28px
+      line-height: 34px
+
+  .recall
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 32px
+    padding-bottom: 10px
+    &_h1
+      font-size: 28px
+      line-height: 34px
+    &_p
+      font-size: 14px
+      line-height: 13px
+      margin-top: 15px
+      margin-bottom: 15px
+    &_left
+      max-width: 45%
+
+  .replies
+    margin-bottom: 24px
+    display: flex
+    justify-content: space-around
+  .reply
+    margin-left: 24px
+    margin-right: 24px
+    width: 40%
+    &_h1
+      font-size: 36px
+      line-height: 43px
+      margin-top: 47px
+      margin-bottom: 30px
+    &_photo
+      float: left
+      margin-right: 18px
+      margin-bottom: 14px
+    &_name
+      font-size: 26px
+      line-height: 31px
+    &_content
+      font-size: 18px
+      line-height: 22px
+    &_from, &_to, &_subject
+      font-size: 10px
+      line-height: 12px
+    &_subject
+      margin-top: 9px
+    &_from
+      margin-top: 5px
+    &_to
+      margin-top: 4px
+    &_content
+      clear: both
+      font-size: 14px
+      line-height: 17px
+    &__arrow
+      top: 178px
+
+  .replies_pagination
+    position: relative
+  .advantages
+    padding-top: 37px
+    padding-bottom: 50px
+    &_h1
+      font-size: 36px
+      line-height: 43px
+    &_blocks
+      display: flex
+      justify-content: space-around
+      margin-top: 23px
+      width: 50%
+      &_line
+        display: flex
+        justify-content: space-between
+    &_block
+      border-radius: 50%
+      background: #FFFFFF
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100px
+      height: 100px
+    &_p
+      font-size: 12px
+      line-height: 14px
+      text-align: center
+      max-width: 100px
+      margin-top: 16px
+  .guaranties
+    display: flex
+    justify-content: space-between
+    &__button
+      width: 170px
+      position: absolute
+      bottom: 0
+    &__arrow
+      display: none
+    &_h1
+      font-size: 36px
+      line-height: 43px
+      margin-top: 47px
+      margin-bottom: 18px
+
+  .guaranties_pagination
+    position: relative
+    margin-bottom: 42px
+
+  .guaranty
+    &_photo
+      border-radius: 50%
+      background: #F7F7F7
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100px
+      height: 100px
+    &_h3
+      font-size: 20px
+      line-height: 24px
+      font-weight: 600
+      margin-top: 18px
+    &_content
+      font-size: 12px
+      line-height: 14px
+      margin-top: 8px
+      margin-bottom: 82px
+    &_image
+      width: 48px
+    &_tablet
+      width: 32%
+      position: relative
+  .faq
+    padding-top: 41px
+    padding-bottom: 39px
+    &_h1
+      font-size: 36px
+      line-height: 43px
+    &_block
+      height: 48px
+    &_question
+      font-size: 16px
+      line-height: 19px
+  .partners
+    position: relative
+    padding-top: 32px
+    padding-bottom: 39px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    &__arrow
+      top: 44px
+  .footer
+    &_logo
+      margin-right: 20px
+    &_first
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding-top: 33px
+      padding-bottom: 28px
+    &_h1
+      font-size: 20px
+      line-height: 24px
+    &_input
+      width: 170px
+      margin-bottom: 0
+      padding-top: 16px
+      padding-bottom: 16px
+    &__button
+      width: 220px
+      margin-left: 20px
+    &_form
+      display: flex
+      align-items: center
+      position: relative
+    &_checkbox_label
+      position: absolute
+      bottom: -20px
+    & .menu_link
+      font-size: 17px
+      line-height: 17px
+      color: #000000
+    & .menu_list
+      margin-top: 0
+    &_copylinks
+      font-size: 12px
+      line-height: 14px
+    &_sociallinks
+      display: flex
+      justify-content: center
+
+  .sociallink
+    padding-left: 8px
+    padding-right: 8px
+
+  .menu_open, .menu_close, .header_hidden
+    display: none
+
+  .layer_1
+    width: 58px
+  .layer_2
+    width: 34px
+  .layer_3
+    width: 36px
+  .layer_4
+    width: 37px
+  .layer_5
+    width: 38px
+  .layer_6
+    width: 40px
+@media (min-width: 900px)
+  .header__img
+    left: -158px
+    top: -2px
+
+  .step
+    width: 40%
+    &_image
+      width: 100%
+
+  .footer
+    &_first
+      justify-content: flex-start
+    &_h1
+      margin-right: 100px
+@media (min-width: 1000px)
+  .header__img
+    left: -34px
+
+@media (min-width: 1130px)
+  .header
+    min-height: 470px
+    &__img
+      min-height: 470px
+      width: calc(100% + 68px)
+
+@media (min-width: 1300px)
+  .header
+    min-height: 525px
+    &__img
+      min-height: 525px
+      width: calc(100% + 68px)
+
+@media (min-width: 1440px)
+  .center
+    padding: 0 140px
+  .header
+    &__img
+      width: calc(100% + 280px)
+      left: -140px
+    &_h1
+      font-size: 48px
+      line-height: 58px
+      margin-top: 88px
+      &:first-of-type
+        margin-top: 88px
+        padding-right: 9px
+      &_block
+        display: flex
+        align-items: center
+    &_h2
+      font-size: 28px
+      margin-top: 18px
+      margin-bottom: 36px
+
+  .menu_link
+    font-size: 18px
+    font-weight: 300
+
+  .menu
+    padding: 0 0 0 140px
+
+  .button
+    width: 310px
+    justify-content: center
+
+  .aggregator
+    height: 457px
+    flex-direction: column
+    &_img
+      margin-bottom: 60px
+      margin-top: 60px
+      order: -1
+      width: 660px
+      margin-right: 97px
+    &_h2
+      width: 460px
+      padding-top: 90px
+    &_content
+      width: 460px
+      margin-right: 0
+    &_p
+      font-size: 16px
+      line-height: 19px
+
+  .step
+    margin-bottom: 50px
+    &_h2
+      font-size: 30px
+      line-height: 36px
+      font-weight: 600
+    &_p
+      font-size: 20px
+      margin-top: 9px
+    &_image
+      margin-top: 69px
+      margin-bottom: 41px
+
+  .call
+    padding-top: 64px
+    padding-bottom: 68px
+    &_h2
+      font-size: 36px
+      line-height: 43px
+  .recall
+    padding-top: 73px
+    padding-bottom: 41px
+    align-items: flex-start
+    &_h1
+      font-size: 48px
+      line-height: 58px
+    &_p
+      font-size: 24px
+      line-height: 23px
+      margin-top: 8px
+    &_left
+      max-width: 100%
+    &_input
+      width: 310px
+    &__button
+      width: 360px
+      font-weight: 700
+
+  .replies
+    margin-bottom: 55px
+  .reply
+    margin-left: 0
+    margin-right: 0
+    width: 40%
+    &_h1
+      font-size: 36px
+      line-height: 43px
+      margin-top: 69px
+      margin-bottom: 60px
+    &_photo
+      float: left
+      margin-right: 39px
+      margin-bottom: 27px
+      width: 160px
+    &_name
+      font-size: 36px
+      line-height: 43px
+      font-weight: 500
+    &_company
+      font-size: 20px
+      line-height: 24px
+      margin-top: 11px
+      font-weight: 500
+    &_from, &_to, &_subject
+      font-size: 16px
+      line-height: 19px
+    &_subject
+      margin-top: 15px
+    &_from
+      margin-top: 4px
+    &_to
+      margin-top: 2px
+    &_content
+      clear: both
+      font-size: 16px
+      line-height: 19px
+    &__arrow
+      top: 230px
+
+  .arrow_left
+    left: 140px
+    height: 20px
+    width: 20px
+
+  .arrow_right
+    right: 140px
+    height: 20px
+    width: 20px
+
+  .advantages
+    padding-top: 101px
+    padding-bottom: 70px
+    &_blocks
+      margin-top: 24px
+    &_block
+      width: 160px
+      height: 160px
+    &_p
+      font-size: 18px
+      line-height: 22px
+      max-width: 160px
+      margin-top: 34px
+
+  .layer_1
+    width: 84px
+  .layer_2
+    width: 62px
+  .layer_3
+    width: 66px
+  .layer_4
+    width: 68px
+  .layer_5
+    width: 68px
+  .layer_6
+    width: 74px
+
+  .guaranties
+    &_h1
+      margin-top: 80px
+      margin-bottom: 27px
+  .guaranties_pagination
+    margin-bottom: 64px
+  .guaranty
+    &_photo
+      width: 160px
+      height: 160px
+    &_h3
+      font-size: 30px
+      line-height: 36px
+      font-weight: 600
+      margin-top: 32px
+    &_content
+      font-size: 16px
+      line-height: 19px
+      margin-top: 10px
+      margin-bottom: 68px
+    &_image
+      width: 75px
+
+  .faq
+    padding-top: 64px
+    padding-bottom: 59px
+    &_block
+      height: 64px
+      margin-bottom: 16px
+
+  .faq_content
+    display: flex
+  .faq_blocks
+    display: flex
+    flex-direction: column
+    min-width: 558px
+    &:first-of-type
+      margin-right: 29px
+  .partners
+    padding: 59px 240px 53px
+
+    &__arrow
+      top: 73px
+    & img
+      width: 94px
+
+  .footer
+    &_copy, &_year
+      font-size: 16px
+      line-height: 19px
+    &_logo
+      margin-right: 40px
+    &_first
+      padding-top: 38px
+    &_h1
+      font-size: 30px
+      line-height: 36px
+      font-weight: 600
+      margin-right: 70px
+    &_input
+      width: 312px
+    &__button
+      width: 362px
+      margin-left: 30px
+    & .menu_link
+      font-size: 18px
+      line-height: 22px
+      font-weight: 400
+      color: #000000
+    & .menu
+      padding-left: 0
+
+  .sociallink
+    font-size: 19px
+    padding-left: 15px
+    padding-right: 15px
+  .logo
+    width: 160px
+    height: 48px
